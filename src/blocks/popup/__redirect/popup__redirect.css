@@ -1,0 +1,15 @@
+.popup__redirect {
+  text-align: center;
+  margin: 0;
+  margin-top: 27px;
+  font-family: 'Inter';
+  font-weight: normal;
+  font-size: 0.78rem;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__redirect {
+    font-size: 0.875rem;
+  }
+}

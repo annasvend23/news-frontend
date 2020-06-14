@@ -1,0 +1,14 @@
+.footer__link {
+  color: #1a1b22;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 425px) {
+  .footer__link {
+    font-size: 1.12rem;
+  }
+}

@@ -1,0 +1,19 @@
+.news-card__title {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 1.44rem;
+  line-height: 1.15;
+  margin: 0;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .news-card__title {
+    font-size: 1.38rem;
+    line-height: 1.15;
+  }
+}

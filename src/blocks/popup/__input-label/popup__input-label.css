@@ -1,0 +1,13 @@
+.popup__input-label {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 0.67rem;
+  line-height: 1.25;
+  color: #2f71e5;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__input-label {
+    font-size: 0.75rem;
+  }
+}

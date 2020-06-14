@@ -1,0 +1,16 @@
+.news-card__text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .news-card__text {
+    font-size: 1rem;
+  }
+}

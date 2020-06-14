@@ -1,0 +1,23 @@
+@import url('./__title/common-info__title.css');
+@import url('./__user/common-info__user.css');
+@import url('./__keywords/common-info__keywords.css');
+@import url('./__keyword/common-info__keyword.css');
+
+.common-info {
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
+
+@media screen and (max-width: 768px) {
+  .common-info {
+    padding-top: 23px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .common-info {
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+}

@@ -1,0 +1,16 @@
+@import url('./__image/search-no-result__image.css');
+@import url('./__title/search-no-result__title.css');
+@import url('./__text/search-no-result__text.css');
+
+.search-no-result {
+  background-color: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .search-no-result {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

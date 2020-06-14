@@ -1,0 +1,11 @@
+.author__description-item {
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .author__description-item {
+    font-size: 1.12rem;
+    line-height: 1.33;
+  }
+}

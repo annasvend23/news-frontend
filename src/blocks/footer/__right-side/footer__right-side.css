@@ -1,0 +1,11 @@
+.footer__right-side {
+  display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .footer__right-side {
+    margin-bottom: 38px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

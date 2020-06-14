@@ -1,0 +1,33 @@
+.button.button__show-more {
+  width: 288px;
+  color: #1a1b22;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.33;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.button.button__show-more:hover {
+  background-color: #e6e8eb;
+  border-color: #e6e8eb;
+}
+
+@media screen and (max-width: 1024px) {
+  .button.button__show-more {
+    width: 260px;
+    font-size: 1.12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button.button__show-more {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button.button__show-more {
+    width: 90%;
+  }
+}

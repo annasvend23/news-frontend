@@ -1,0 +1,23 @@
+.header__side_right {
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .header__side_right {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    flex-direction: column;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__side_right {
+    top: 57px;
+  }
+}

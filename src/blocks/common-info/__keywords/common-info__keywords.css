@@ -1,0 +1,24 @@
+.common-info__keywords {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.33;
+  color: #1a1b22;
+  width: 58%;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .common-info__keywords {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .common-info__keywords {
+    font-size: 1.12rem;
+    line-height: 1.33;
+  }
+}

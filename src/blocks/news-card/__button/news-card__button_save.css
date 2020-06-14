@@ -1,0 +1,10 @@
+.news-card__button_save {
+  border: none;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.news-card__button_save:hover path {
+  stroke: #1a1b22;
+  transition: 0.3s;
+}
