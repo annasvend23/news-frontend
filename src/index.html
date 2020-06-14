@@ -92,7 +92,7 @@
         </div>
 
         <div class="news-card">
-          <img src="<%=require('./images/image_04.png').default%>" alt="Цветы" class="news-card__image">
+          <img src="<%=require('./images/image_04.png').default%>" alt="Фикус" class="news-card__image">
           <div class="news-card__button-wrap">
             <div class="news-card__prompt news-card__button hidden">Войдите, чтобы сохранять статьи</div>
             <button class="news-card__button_save news-card__button">
@@ -110,7 +110,7 @@
         </div>
 
         <div class="news-card">
-          <img src="<%=require('./images/image_07.png').default%>" alt="Цветы" class="news-card__image">
+          <img src="<%=require('./images/image_07.png').default%>" alt="Зеленые листья" class="news-card__image">
           <div class="news-card__button-wrap">
             <div class="news-card__prompt news-card__button hidden">Войдите, чтобы сохранять статьи</div>
             <button class="news-card__button_save news-card__button">
@@ -196,17 +196,17 @@
         <form class="popup__form" name="signup" novalidate>
           <div class="popup__input-wrap">
             <label for="email" class="popup__input-label">Email</label>
-            <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите почту" required>
+            <input type="email" name="email" id="email" class="popup__input popup__input_type_email" placeholder="Введите почту" required>
             <div class="popup__input-error">Ошибка инпута</div>
           </div>
           <div class="popup__input-wrap">
             <label for="password" class="popup__input-label">Пароль</label>
-            <input type="password" name="password" minlength="8" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+            <input type="password" name="password" id="password" minlength="8" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
             <div class="popup__input-error"></div>
           </div>
           <div class="popup__input-wrap">
             <label for="name" class="popup__input-label">Имя</label>
-            <input type="text" name="name" minlength="2" maxlength="30" class="popup__input popup__input_type_name" placeholder="Введите свое имя" required>
+            <input type="text" name="name" id="name" minlength="2" maxlength="30" class="popup__input popup__input_type_name" placeholder="Введите свое имя" required>
             <div class="popup__input-error"></div>
           </div>
           <div class="popup__form-error">Ошибка формы</div>
@@ -225,13 +225,13 @@
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="signin" novalidate>
           <div class="popup__input-wrap">
-            <label for="email" class="popup__input-label">Email</label>
-            <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите почту" required>
+            <label for="old-email" class="popup__input-label">Email</label>
+            <input type="email" name="email" id="old-email" class="popup__input popup__input_type_email" placeholder="Введите почту" required>
             <div class="popup__input-error"></div>
           </div>
           <div class="popup__input-wrap">
-            <label for="password" class="popup__input-label">Пароль</label>
-            <input type="password" name="password" minlength="8" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+            <label for="old-password" class="popup__input-label">Пароль</label>
+            <input type="password" name="password" id="old-password" minlength="8" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
             <div class="popup__input-error"></div>
           </div>
           <div class="popup__form-error"></div>
@@ -251,7 +251,7 @@
         <button class="popup__redirect-button popup__redirect-button_large">Выполнить вход</button>
       </div>
     </div>
-
+  </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

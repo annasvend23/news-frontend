@@ -8,7 +8,6 @@
   <meta name="description" content="News Explorer сохраняет все новости на этой странице">
   <title>News Explorer</title>
   <link rel="icon" href="<%=require('./images/favicon.png').default%>">
-  <link rel="icon" href="<%=require('./images/favicon.svg').default%>" sizes="any" type="image/svg+xml">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.articles.css %>">
 </head>
 <body>
@@ -72,7 +71,7 @@
         </div>
 
         <div class="news-card">
-          <img src="<%=require('./images/image_04.png').default%>" alt="Цветы" class="news-card__image">
+          <img src="<%=require('./images/image_04.png').default%>" alt="Фикус" class="news-card__image">
           <div class="news-card__keyword news-card__button">Природа</div>
           <div class="news-card__button-wrap">
             <div class="news-card__prompt news-card__button hidden">Убрать из сохранённых</div>
@@ -91,7 +90,7 @@
         </div>
 
         <div class="news-card">
-          <img src="<%=require('./images/image_07.png').default%>" alt="Цветы" class="news-card__image">
+          <img src="<%=require('./images/image_07.png').default%>" alt="Листья" class="news-card__image">
           <div class="news-card__keyword news-card__button">Природа</div>
           <div class="news-card__button-wrap">
             <div class="news-card__prompt news-card__button hidden">Убрать из сохранённых</div>
@@ -155,7 +154,7 @@
         </ul>
       </div>
     </footer>
-
+  </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 </html>
