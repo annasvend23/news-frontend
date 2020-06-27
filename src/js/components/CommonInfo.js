@@ -54,7 +54,7 @@ export class CommonInfo extends BaseComponent {
       });
       elements.pop();
       elements.push(
-        this._renderKeyword({ keyword: ` и ${keywordsSorted.length - 2} другим` }),
+        CommonInfo.renderKeyword({ keyword: ` и ${keywordsSorted.length - 2} другим` }),
       );
     }
 

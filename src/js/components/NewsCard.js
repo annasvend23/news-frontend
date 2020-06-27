@@ -99,11 +99,11 @@ export class NewsCard extends BaseComponent {
   _transformData() {
     return {
       keyword: this.searchForm.getKeyword(),
-      title: this.data.title,
-      text: this.data.description,
-      date: this.data.publishedAt,
-      source: this.data.source && this.data.source.name,
-      link: this.data.url,
+      title: this.data.title || 'Новость',
+      text: this.data.description || 'Текст новости',
+      date: this.data.publishedAt || new Date().toISOString(),
+      source: (this.data.source && this.data.source.name) || 'Yandex News',
+      link: this.data.url || 'https://news-explorer.space',
       image: this.data.urlToImage || 'https://images.unsplash.com/photo-1485115905815-74a5c9fda2f5?w=500&q=80',
     };
   }
