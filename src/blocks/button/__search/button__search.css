@@ -1,0 +1,26 @@
+.button.button__search {
+  width: 168px;
+  background-color: #2f71e5;
+  border-color: #2f71e5;
+  position: absolute;
+  right: -3px;
+  top: 0;
+}
+
+.button.button__search:hover {
+  background-color: #347eff;
+  border-color: #347eff;
+}
+
+.button.button__search:active {
+  background-color: #2a65cc;
+  border-color: #347eff;
+}
+
+@media screen and (max-width: 700px) {
+  .button.button__search {
+    right: 0;
+    top: 70px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.popup__button {
+  width: 100%;
+  margin-top: 8px;
+  background-color: #2f71e5;
+}
+
+.popup__button:hover {
+  background-color: #347eff;
+  border-color: #347eff;
+}
+
+.popup__button:active {
+  background-color: #2a65cc;
+  border-color: #347eff;
+}
+
+.popup__button:disabled {
+  background-color: #e6e8eb;
+  border: none;
+  color: #b6bcbf;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__button {
+    height: 64px;
+  }
+}

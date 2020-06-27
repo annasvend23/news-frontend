@@ -1,0 +1,9 @@
+.header__nav-item_dark {
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 640px) {
+  .header__nav-item_dark {
+    color: #fff;
+  }
+}

@@ -1,0 +1,9 @@
+.header.header__theme_white {
+  color: #1a1b22;
+  border-bottom: 1px solid #d1d2d6;
+}
+
+.header.header__theme_white .header__nav-item:hover {
+  color: #1a1b22;
+  opacity: 0.8;
+}

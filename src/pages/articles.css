@@ -1,0 +1,25 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url('../blocks/root/root.css');
+@import url('../blocks/header-container/header-container.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/common-info/common-info.css');
+@import url('../blocks/button/button.css');
+@import url('../blocks/search-result/search-result.css');
+@import url('../blocks/news-card/news-card.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/hidden/hidden.css');
+
+html {
+  font-family: 'Roboto';
+  font-weight: 400;
+  background-color: #fff;
+  color: #1a1b22;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

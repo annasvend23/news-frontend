@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Анна Самусева">
+  <meta name="description" content="Этот сайт создан для поиска и сохранения новостей по разным темам">
+  <title>News Explorer</title>
+  <link rel="icon" href="<%=require('./images/favicon.png').default%>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <div class="root">
+    <div class="header-container">
+      <header class="header">
+        <div class="header__wrap root__section">
+          <p class="header__logo">NewsExplorer</p>
+          <svg width="24" height="24" fill="none" class="header__btn-menu-open">
+            <path fill="#fff" d="M4 8h16v2H4zM4 14h16v2H4z"/>
+          </svg>
+          <svg width="24" height="24" fill="none" class="header__btn-menu-close hidden">
+            <path d="M13.414 12l5.293 5.293-1.414 1.414-6-6a1 1 0 010-1.414l6-6 1.414 1.414L13.414 12z" fill="#fff"/><path d="M10.879 12l-5.293 5.293L7 18.707l6-6a1 1 0 000-1.414l-6-6-1.414 1.414L10.879 12z" fill="#fff"/>
+          </svg>
+          <div class="header__side_right">
+            <nav class="header__navigation">
+              <ul class="header__nav-list">
+                <li class="header__nav-item header__nav-item_active"><a href="./index.html" class="header__nav-link">Главная</a></li>
+                <li class="header__nav-item"><a href="./articles.html" class="header__nav-link">Сохранённые статьи</a></li>
+              </ul>
+            </nav>
+            <div class="header__user">
+              <button class="button button__log-out button_small hidden">
+                Грета
+                <svg class="button__exit-img" width="18" height="16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2H2v12h4v2H2a2 2 0 01-2-2V2a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459L9.293 2.94l4.293 4.134H4V9h9.586z" fill="#fff"/>
+                </svg>
+              </button>
+              <button class="button button__sign-up button_small">Авторизоваться</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="search">
+        <div class="search__container">
+          <h1 class="search__heading">Что в мире творится?</h1>
+          <p class="search__info">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+          <div class="search__line">
+            <input class="search__input" type="text" placeholder="Введите тему новости">
+            <button class="button button__search">Искать</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="preloader hidden">
+      <div class="preloader__spiner"></div>
+      <p class="preloader__text">Идет поиск новостей...</p>
+    </section>
+
+    <section class="search-no-result hidden">
+      <svg width="96" height="96" fill="none" class="search-no-result__image">
+        <circle cx="43" cy="43" r="36.5" stroke="#D1D2D6"/>
+        <path d="M69 69l19.5 19.5M58.328 55.959c-3.667-4.261-9.1-6.96-15.164-6.96-6.063 0-11.496 2.699-15.164 6.96" stroke="#D1D2D6"/>
+        <circle cx="55.5" cy="33.5" r="1.5" fill="#D1D2D6"/>
+        <circle cx="30.5" cy="33.5" r="1.5" fill="#D1D2D6"/>
+      </svg>
+      <h3 class="search-no-result__title">Ничего не найдено</h3>
+      <p class="search-no-result__text">К сожалению, по вашему запросу ничего не найдено.</p>
+    </section>
+
+    <section class="search-result">
+      <h2 class="search-result__title root__section">Результаты поиска</h2>
+      <div class="search-result__news-cards root__section">
+        <div class="news-card">
+          <img src="<%=require('./images/image_08.png').default%>" alt="Цветы" class="news-card__image">
+          <div class="news-card__button-wrap">
+            <div class="news-card__prompt news-card__button hidden">Войдите, чтобы сохранять статьи</div>
+            <button class="news-card__button_save news-card__button">
+              <svg width="14" height="19" fill="none">
+                <path d="M6.382 12.714L1 16.942V1h12v15.942l-5.382-4.228L7 12.228l-.618.486z" stroke="#b6bcbf" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+          <div class="news-card__description">
+            <span class="news-card__date">2 августа, 2019</span>
+            <h3 class="news-card__title">Национальное достояние – парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          </div>
+          <span class="news-card__source">Лента.ру</span>
+        </div>
+
+        <div class="news-card">
+          <img src="<%=require('./images/image_04.png').default%>" alt="Фикус" class="news-card__image">
+          <div class="news-card__button-wrap">
+            <div class="news-card__prompt news-card__button hidden">Войдите, чтобы сохранять статьи</div>
+            <button class="news-card__button_save news-card__button">
+              <svg width="14" height="19" fill="none">
+                <path d="M6.382 12.714L1 16.942V1h12v15.942l-5.382-4.228L7 12.228l-.618.486z" stroke="#b6bcbf" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+          <div class="news-card__description">
+            <span class="news-card__date">2 августа, 2019</span>
+            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
+            <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+          </div>
+          <span class="news-card__source">Медуза</span>
+        </div>
+
+        <div class="news-card">
+          <img src="<%=require('./images/image_07.png').default%>" alt="Зеленые листья" class="news-card__image">
+          <div class="news-card__button-wrap">
+            <div class="news-card__prompt news-card__button hidden">Войдите, чтобы сохранять статьи</div>
+            <button class="news-card__button_save news-card__button">
+              <svg width="14" height="19" fill="none">
+                <path d="M6.382 12.714L1 16.942V1h12v15.942l-5.382-4.228L7 12.228l-.618.486z" stroke="#b6bcbf" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+          <div class="news-card__description">
+            <span class="news-card__date">2 августа, 2019</span>
+            <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где растет много разных деревьев.</p>
+          </div>
+          <span class="news-card__source">Риа</span>
+        </div>
+
+        <div class="news-card">
+          <img src="<%=require('./images/image_08.png').default%>" alt="Цветы" class="news-card__image">
+          <div class="news-card__button-wrap">
+            <div class="news-card__prompt news-card__button hidden">Войдите, чтобы сохранять статьи</div>
+            <button class="news-card__button_save news-card__button">
+              <svg width="14" height="19" fill="none">
+                <path d="M6.382 12.714L1 16.942V1h12v15.942l-5.382-4.228L7 12.228l-.618.486z" stroke="#b6bcbf" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+          <div class="news-card__description">
+            <span class="news-card__date">2 августа, 2019</span>
+            <h3 class="news-card__title">Национальное достояние – парки</h3>
+            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          </div>
+          <span class="news-card__source">Лента.ру</span>
+        </div>
+      </div>
+
+      <button class="button button__show-more search-result__show-more">Показать еще</button>
+    </section>
+
+    <section class="author root__section">
+      <img src="<%=require('./images/girl.png').default%>" alt="Фото автора сайта" class="author__image">
+      <div class="author__info">
+        <h2 class="author__heading">Об авторе</h2>
+        <div class="author__description">
+          <p class="author__description-item">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="author__description-item">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer root__section">
+      <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+      <div class="footer__right-side">
+        <ul class="footer__links">
+          <li class="footer__link-item"><a href="./index.html" class="footer__link">Главная</a></li>
+          <li class="footer__link-item"><a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__link-item">
+            <a href="https://github.com/annasvend23/" class="footer__link">
+              <svg class="footer__social-image" width="22" height="21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 .895C5.417.895.895 5.423.895 11c0 4.466 2.897 8.25 6.91 9.59.503.093.689-.217.689-.49 0-.242-.007-.874-.013-1.718-2.81.608-3.405-1.352-3.405-1.352-.46-1.167-1.123-1.477-1.123-1.477-.918-.626.068-.614.068-.614 1.011.075 1.55 1.042 1.55 1.042.9 1.545 2.364 1.098 2.941.838.093-.652.354-1.098.64-1.353-2.246-.254-4.604-1.122-4.604-4.993 0-1.105.391-2.004 1.042-2.711-.105-.255-.452-1.284.1-2.674 0 0 .85-.273 2.779 1.036a9.806 9.806 0 012.53-.341 9.843 9.843 0 012.532.341c1.929-1.309 2.779-1.036 2.779-1.036.552 1.39.205 2.42.1 2.674.644.707 1.035 1.606 1.035 2.71 0 3.884-2.363 4.734-4.615 4.988.36.31.688.93.688 1.874 0 1.352-.012 2.438-.012 2.773 0 .272.18.583.695.483 4.013-1.34 6.904-5.124 6.904-9.584C21.105 5.423 16.583.895 11 .895z" fill="#191717"/>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__link-item">
+            <a href="https://www.facebook.com/" class="footer__link">
+              <svg class="footer__social-image" width="20" height="20" fill="none">
+                <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" fill="#000"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="popup popup__sign-up">
+      <div class="popup__content">
+        <svg class="popup__close" width="28" height="27" viewBox="0 0 28 27" fill="none">
+          <line x1="1.93934" y1="25.9393" x2="25.9393" y2="1.93934" stroke="white" stroke-width="3"/>
+          <line x1="2.06066" y1="1.93934" x2="26.0607" y2="25.9393" stroke="white" stroke-width="3"/>
+        </svg>
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" name="signup" novalidate>
+          <div class="popup__input-wrap">
+            <label for="email" class="popup__input-label">Email</label>
+            <input type="email" name="email" id="email" class="popup__input popup__input_type_email" placeholder="Введите почту" required>
+            <div class="popup__input-error">Ошибка инпута</div>
+          </div>
+          <div class="popup__input-wrap">
+            <label for="password" class="popup__input-label">Пароль</label>
+            <input type="password" name="password" id="password" minlength="8" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+            <div class="popup__input-error"></div>
+          </div>
+          <div class="popup__input-wrap">
+            <label for="name" class="popup__input-label">Имя</label>
+            <input type="text" name="name" id="name" minlength="2" maxlength="30" class="popup__input popup__input_type_name" placeholder="Введите свое имя" required>
+            <div class="popup__input-error"></div>
+          </div>
+          <div class="popup__form-error">Ошибка формы</div>
+          <button type="submit" class="button popup__button popup__button_sign-up">Зарегистрироваться</button>
+          <p class="popup__redirect">или <button class="popup__redirect-button">Войти</button></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup__sign-in">
+      <div class="popup__content">
+        <svg class="popup__close" width="28" height="27" viewBox="0 0 28 27" fill="none">
+          <line x1="1.93934" y1="25.9393" x2="25.9393" y2="1.93934" stroke="white" stroke-width="3"/>
+          <line x1="2.06066" y1="1.93934" x2="26.0607" y2="25.9393" stroke="white" stroke-width="3"/>
+        </svg>
+        <h3 class="popup__title">Вход</h3>
+        <form class="popup__form" name="signin" novalidate>
+          <div class="popup__input-wrap">
+            <label for="old-email" class="popup__input-label">Email</label>
+            <input type="email" name="email" id="old-email" class="popup__input popup__input_type_email" placeholder="Введите почту" required>
+            <div class="popup__input-error"></div>
+          </div>
+          <div class="popup__input-wrap">
+            <label for="old-password" class="popup__input-label">Пароль</label>
+            <input type="password" name="password" id="old-password" minlength="8" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+            <div class="popup__input-error"></div>
+          </div>
+          <div class="popup__form-error"></div>
+          <button type="submit" class="button popup__button popup__button_sign-up" disabled>Войти</button>
+          <p class="popup__redirect">или <button class="popup__redirect-button">Зарегистрироваться</button></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup__successful-sign-up">
+      <div class="popup__content">
+        <svg class="popup__close" width="28" height="27" viewBox="0 0 28 27" fill="none">
+          <line x1="1.93934" y1="25.9393" x2="25.9393" y2="1.93934" stroke="white" stroke-width="3"/>
+          <line x1="2.06066" y1="1.93934" x2="26.0607" y2="25.9393" stroke="white" stroke-width="3"/>
+        </svg>
+        <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+        <button class="popup__redirect-button popup__redirect-button_large">Выполнить вход</button>
+      </div>
+    </div>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

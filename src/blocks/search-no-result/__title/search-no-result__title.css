@@ -1,0 +1,15 @@
+.search-no-result__title {
+  width: 356px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.44rem;
+  line-height: 1.5;
+  font-family: 'Roboto Slab';
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .search-no-result__title {
+    width: 90%;
+  }
+}

@@ -1,0 +1,12 @@
+.header__menu-open {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  background-color: #1a1b22;
+  overflow: hidden;
+  color: #fff;
+}
+
+.header__menu-open .button__exit-img path {
+  fill: #fff;
+}

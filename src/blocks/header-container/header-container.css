@@ -1,0 +1,11 @@
+@import url('./__theme/header-container__theme_white.css');
+
+.header-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../images/main-phone.png);
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+}

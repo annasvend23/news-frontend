@@ -1,0 +1,17 @@
+.header__nav-item.header__nav-item_active {
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+
+.header__nav-item_dark.header__nav-item_active,
+.header__nav-item_dark.header__nav-item_active:hover {
+  border-bottom: 3px solid #1a1b22;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 640px) {
+  .header__nav-item.header__nav-item_active {
+    border-bottom: none;
+    color: #fff;
+  }
+}

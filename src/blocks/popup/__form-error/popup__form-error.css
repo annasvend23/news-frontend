@@ -1,0 +1,12 @@
+.popup__form-error {
+  font-size: 0.67rem;
+  line-height: 1.25;
+  color: #f00;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__form-error {
+    font-size: 0.75rem;
+  }
+}

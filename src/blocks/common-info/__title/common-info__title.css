@@ -1,0 +1,26 @@
+.common-info__title {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.33;
+  color: #d1d2d6;
+  width: 58%;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .common-info__title {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .common-info__title {
+    font-size: 0.75rem;
+    line-height: 2;
+    margin-bottom: 16px;
+  }
+}

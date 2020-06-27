@@ -1,0 +1,15 @@
+.preloader__spiner {
+  width: 74px;
+  height: 74px;
+  background-image: url('../../../images/Ellipse.png');
+  margin: auto;
+  margin-bottom: 24px;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

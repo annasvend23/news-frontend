@@ -1,0 +1,17 @@
+.author__info {
+  width: 49%;
+}
+
+@media screen and (max-width: 768px) {
+  .author__info {
+    width: 62%;
+    font-size: 1.125rem;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .author__info {
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+.popup__redirect-button_large {
+  font-size: 1rem;
+  line-height: 1.22;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__redirect-button_large {
+    font-size: 1.125rem;
+  }
+}

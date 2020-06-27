@@ -1,0 +1,22 @@
+@import url('./__title/search-result__title.css');
+@import url('./__news-cards/search-result__news-cards.css');
+@import url('./__show-more/search-result__show-more.css');
+
+.search-result {
+  background-color: #f5f6f7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-result {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .search-result {
+    padding-top: 35px;
+  }
+}

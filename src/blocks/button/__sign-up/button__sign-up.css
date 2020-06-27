@@ -1,0 +1,14 @@
+.button.button__sign-up {
+  margin-left: 5px;
+}
+
+.button.button__sign-up:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 640px) {
+  .button.button__sign-up {
+    margin-left: 0;
+  }
+}

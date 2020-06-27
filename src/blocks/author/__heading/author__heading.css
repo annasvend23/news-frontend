@@ -1,0 +1,25 @@
+.author__heading {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.15;
+  width: 83%;
+  margin-top: 8%;
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 768px) {
+  .author__heading {
+    font-size: 1.9rem;
+    line-height: 1.33;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .author__heading {
+    width: 100%;
+    margin-top: 24px;
+  }
+}

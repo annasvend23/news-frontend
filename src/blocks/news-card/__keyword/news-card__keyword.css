@@ -1,0 +1,23 @@
+.news-card__keyword {
+  display: flex;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  max-width: calc(90% - 65px);
+  white-space: normal;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 768px) {
+  .news-card__keyword {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .news-card__keyword {
+    top: 16px;
+    left: 16px;
+  }
+}

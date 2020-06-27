@@ -1,0 +1,9 @@
+.header__btn-menu-open {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .header__btn-menu-open {
+    display: block;
+  }
+}

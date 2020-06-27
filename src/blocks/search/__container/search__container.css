@@ -1,0 +1,34 @@
+.search__container {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  width: 42%;
+  max-width: 608px;
+}
+
+@media screen and (max-width: 1150px) {
+  .search__container {
+    margin: 60px auto;
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search__container {
+    margin: 42px auto;
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search__container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search__container {
+    width: 90%;
+    margin-top: 30px;
+  }
+}

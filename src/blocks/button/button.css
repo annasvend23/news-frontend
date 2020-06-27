@@ -1,0 +1,28 @@
+@import url('./__exit-img/button__exit-img.css');
+@import url('./__log-out/button__log-out.css');
+@import url('./__sign-up/button__sign-up.css');
+@import url('./button_small.css');
+@import url('./__search/button__search.css');
+@import url('./__show-more/button__show-more.css');
+@import url('./__theme/button__theme_white.css');
+
+.button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 64px;
+  padding: 0;
+  border-radius: 32px;
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    height: 56px;
+  }
+}
+
+

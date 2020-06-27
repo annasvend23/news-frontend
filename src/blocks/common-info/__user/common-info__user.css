@@ -1,0 +1,24 @@
+.common-info__user {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 2.22rem;
+  line-height: 1.15;
+  color: #1a1b22;
+  width: 43%;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .common-info__user {
+    width: 55%;
+    font-size: 1.875rem;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .common-info__user {
+    width: 100%;
+  }
+}

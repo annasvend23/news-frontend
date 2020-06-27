@@ -1,0 +1,49 @@
+@import url('./__logo/header__logo.css');
+@import url('./__nav-list/header__nav-list.css');
+@import url('./__nav-item/header__nav-item.css');
+@import url('./__nav-item/header__nav-item_active.css');
+@import url('./__nav-item/header__nav-item_dark.css');
+@import url('./__nav-link/header__nav-link.css');
+@import url('./__user/header__user.css');
+@import url('./__side/header__side_right.css');
+@import url('./__theme/header__theme_white.css');
+@import url('./__wrap/header__wrap.css');
+@import url('./__btn-menu-open/header__btn-menu-open.css');
+@import url('./__menu-open/header__menu-open.css');
+@import url('./__navigation/header__navigation.css');
+
+.header {
+  min-height: 80px;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    min-height: 64px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header::before {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    pointer-events: none;
+    opacity: 0;
+    background: #1a1b22;
+  }
+  .header__menu-open.header::before {
+    z-index: 1;
+    pointer-events: auto;
+    opacity: .8;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    min-height: 56px;
+  }
+}
