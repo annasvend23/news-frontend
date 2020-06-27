@@ -8,7 +8,7 @@
   <meta name="description" content="News Explorer сохраняет все новости на этой странице">
   <title>News Explorer</title>
   <link rel="icon" href="./images/favicon.png">
-  <link rel="stylesheet" href="style.8e803cc5ef80b1ca3ee0.css">
+  <link rel="stylesheet" href="style.2b7d476a13a3badc4684.css">
 </head>
 <body>
   <div class="root">
@@ -26,12 +26,12 @@
             <nav class="header__navigation">
               <ul class="header__nav-list">
                 <li class="header__nav-item header__nav-item_dark"><a href="./index.html" class="header__nav-link">Главная</a></li>
-                <li class="header__nav-item header__nav-item_dark header__nav-item_active"><a href="./articles.html" class="header__nav-link">Сохранённые статьи</a></li>
+                <li id="saved-articles-page" class="header__nav-item header__nav-item_dark header__nav-item_active"><a href="./articles.html" class="header__nav-link">Сохранённые статьи</a></li>
               </ul>
             </nav>
             <div class="header__user">
               <button class="button button__log-out button_small button__theme_white">
-                Грета
+                <span id="user-name"></span>
                 <svg class="button__exit-img" width="18" height="16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2H2v12h4v2H2a2 2 0 01-2-2V2a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459L9.293 2.94l4.293 4.134H4V9h9.586z" fill="#1a1b22"/>
                 </svg>
@@ -44,89 +44,16 @@
 
       <section class="common-info root__section">
         <h2 class="common-info__title">Сохранённые статьи</h2>
-        <p class="common-info__user">Грета, у вас 5 сохранённых статей</p>
-        <p class="common-info__keywords">По ключевым словам: <span class="common-info__keyword">Природа</span>, <span class="common-info__keyword">Тайга</span> и <span class="common-info__keyword">2 другим</span></p>
+        <p class="common-info__user"></p>
+        <p class="common-info__keywords">
+          По ключевым словам:
+          <span id="common-info-keywords-container"></span>
+        </p>
       </section>
     </div>
 
     <section class="search-result">
-      <div class="search-result__news-cards root__section">
-        <div class="news-card">
-          <img src="./images/image_08.png" alt="Цветы" class="news-card__image">
-          <div class="news-card__keyword news-card__button">Природа</div>
-          <div class="news-card__button-wrap">
-            <div class="news-card__prompt news-card__button">Убрать из сохранённых</div>
-            <button class="button news-card__button_delete news-card__button">
-              <svg width="18" height="19" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H6v2H0v2h18V2h-6V0zM2 6v11a2 2 0 002 2h10a2 2 0 002-2V6h-2v11H4V6H2zm4 0v9h2V6H6zm4 0v9h2V6h-2z" fill="#b6bcbf"/>
-              </svg>
-            </button>
-          </div>
-          <div class="news-card__description">
-            <span class="news-card__date">2 августа, 2019</span>
-            <h3 class="news-card__title">Национальное достояние – парки</h3>
-            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          </div>
-          <span class="news-card__source">Лента.ру</span>
-        </div>
-
-        <div class="news-card">
-          <img src="./images/image_04.png" alt="Цветы" class="news-card__image">
-          <div class="news-card__keyword news-card__button">Природа</div>
-          <div class="news-card__button-wrap">
-            <div class="news-card__prompt news-card__button hidden">Убрать из сохранённых</div>
-            <button class="button news-card__button_delete news-card__button">
-              <svg width="18" height="19" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H6v2H0v2h18V2h-6V0zM2 6v11a2 2 0 002 2h10a2 2 0 002-2V6h-2v11H4V6H2zm4 0v9h2V6H6zm4 0v9h2V6h-2z" fill="#b6bcbf"/>
-              </svg>
-            </button>
-          </div>
-          <div class="news-card__description">
-            <span class="news-card__date">2 августа, 2019</span>
-            <h3 class="news-card__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="news-card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-          </div>
-          <span class="news-card__source">Медуза</span>
-        </div>
-
-        <div class="news-card">
-          <img src="./images/image_07.png" alt="Цветы" class="news-card__image">
-          <div class="news-card__keyword news-card__button">Природа</div>
-          <div class="news-card__button-wrap">
-            <div class="news-card__prompt news-card__button hidden">Убрать из сохранённых</div>
-            <button class="button news-card__button_delete news-card__button">
-              <svg width="18" height="19" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H6v2H0v2h18V2h-6V0zM2 6v11a2 2 0 002 2h10a2 2 0 002-2V6h-2v11H4V6H2zm4 0v9h2V6H6zm4 0v9h2V6h-2z" fill="#b6bcbf"/>
-              </svg>
-            </button>
-          </div>
-          <div class="news-card__description">
-            <span class="news-card__date">2 августа, 2019</span>
-            <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где растет много разных деревьев.</p>
-          </div>
-          <span class="news-card__source">Риа</span>
-        </div>
-
-        <div class="news-card hidden">
-          <img src="./images/image_08.png" alt="Цветы" class="news-card__image">
-          <div class="news-card__keyword news-card__button">Природа</div>
-          <div class="news-card__button-wrap">
-            <div class="news-card__prompt news-card__button hidden">Убрать из сохранённых</div>
-            <button class="button news-card__button_delete news-card__button">
-              <svg width="18" height="19" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H6v2H0v2h18V2h-6V0zM2 6v11a2 2 0 002 2h10a2 2 0 002-2V6h-2v11H4V6H2zm4 0v9h2V6H6zm4 0v9h2V6h-2z" fill="#b6bcbf"/>
-              </svg>
-            </button>
-          </div>
-          <div class="news-card__description">
-            <span class="news-card__date">2 августа, 2019</span>
-            <h3 class="news-card__title">Национальное достояние – парки</h3>
-            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          </div>
-          <span class="news-card__source">Лента.ру</span>
-        </div>
-      </div>
+      <div class="search-result__news-cards root__section"></div>
     </section>
 
     <footer class="footer root__section">
@@ -155,6 +82,29 @@
       </div>
     </footer>
   </div>
-  <script src="articles.d916b4884e16d7c08667.js"></script>
+
+  <template id="article-card">
+    <div class="news-card">
+      <a href="#" class="news-card__link" target="_blank">
+        <img src="./images/image_07.png" alt="Новость" class="news-card__image">
+      </a>
+      <div class="news-card__keyword news-card__button">Природа</div>
+      <div class="news-card__button-wrap">
+        <div class="news-card__prompt news-card__button hidden">Убрать из сохранённых</div>
+        <button class="button news-card__button_delete news-card__button">
+          <svg width="18" height="19" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H6v2H0v2h18V2h-6V0zM2 6v11a2 2 0 002 2h10a2 2 0 002-2V6h-2v11H4V6H2zm4 0v9h2V6H6zm4 0v9h2V6h-2z" fill="#b6bcbf"/>
+          </svg>
+        </button>
+      </div>
+      <div class="news-card__description">
+        <span class="news-card__date">2 августа, 2019</span>
+        <h3 class="news-card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+        <p class="news-card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где растет много разных деревьев.</p>
+      </div>
+      <span class="news-card__source">Риа</span>
+    </div>
+  </template>
+  <script src="articles.accbeea591a1480033b5.js"></script>
 </body>
 </html>
