@@ -1,6 +1,6 @@
-# [annasvend23.github.io/news-frontend/](https://annasvend23.github.io/news-frontend/)
+# [https://news-explorer.space/](https://news-explorer.space/)
 
-## Version 1.0.0
+## Version 1.1.0
 
 ### News-frontend
 

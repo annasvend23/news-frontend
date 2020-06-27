@@ -1,8 +1,8 @@
 .search-result__news-cards {
   margin-bottom: 48px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
-  grid-gap: 1.3%;
+  grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+  grid-gap: 8px;
   justify-content: center;
 }
 
@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 767px) {
   .search-result__news-cards {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
   }
 }
 

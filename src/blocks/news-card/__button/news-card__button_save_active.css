@@ -1,0 +1,14 @@
+.news-card__button_save_active {
+  background-color: #fff;
+  border: none;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.news-card__button_save_active path {
+  stroke: #2f71e5;
+}
+
+.news-card__button_save_active svg {
+  fill: #2f71e5;
+}

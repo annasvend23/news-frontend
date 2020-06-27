@@ -6,7 +6,7 @@
   max-width: 90%;
 }
 
-.news-card__button-wrap:hover .news-card__prompt {
+.news-card__button-wrap_unauthorized:hover .news-card__prompt {
   display: flex;
 }
 
