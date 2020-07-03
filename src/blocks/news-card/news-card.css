@@ -1,6 +1,7 @@
 @import url('./__image/news-card__image.css');
 @import url('./__button-wrap/news-card__button-wrap.css');
 @import url('./__button/news-card__button.css');
+@import url('./__button/news-card__button_save_active.css');
 @import url('./__button/news-card__button_save.css');
 @import url('./__button/news-card__button_delete.css');
 @import url('./__keyword/news-card__keyword.css');

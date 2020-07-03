@@ -5,6 +5,6 @@
   margin-left: 5px;
 }
 
-.news-card__button_delete:hover path {
+.news-card__button_delete path {
   fill: #1a1b22;
 }

@@ -15,7 +15,7 @@
 @import url('../blocks/popup/popup.css');
 
 html {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #fff;
   color: #1a1b22;

@@ -1,5 +1,6 @@
 .button.button__search {
   width: 168px;
+  height: 62px;
   background-color: #2f71e5;
   border-color: #2f71e5;
   position: absolute;
@@ -15,6 +16,13 @@
 .button.button__search:active {
   background-color: #2a65cc;
   border-color: #347eff;
+}
+
+.button.button__search:disabled {
+  background-color: #e6e8eb;
+  border: none;
+  color: #b6bcbf;
+  cursor: not-allowed;
 }
 
 @media screen and (max-width: 700px) {

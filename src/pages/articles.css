@@ -11,7 +11,7 @@
 @import url('../blocks/hidden/hidden.css');
 
 html {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #fff;
   color: #1a1b22;
