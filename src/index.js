@@ -17,7 +17,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const baseUrl = isDev ? 'http://localhost:3000' : 'https://api.news-explorer.space';
 const newsUrl = isDev
   ? 'https://newsapi.org/v2/everything'
-  : 'https://praktikum.tk/news/v2/everything';
+  : `${baseUrl}/news-api`;
 
 const mainApi = new MainApi({
   baseUrl,
